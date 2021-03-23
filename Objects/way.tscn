@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 8, 4 )
+
+[node name="Way" type="StaticBody2D"]
+collision_layer = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+one_way_collision = true

@@ -1,0 +1,43 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
+[application]
+
+config/name="Platform"
+run/main_scene="res://Levels/Platform.tscn"
+
+[display]
+
+window/size/width=640
+window/size/height=480
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+window/stretch/shrink=2.0
+
+[layer_names]
+
+2d_render/layer_1="Player"
+2d_physics/layer_1="Player"
+2d_render/layer_2="Way"
+2d_physics/layer_2="Way"
+2d_render/layer_3="Platform"
+2d_physics/layer_3="Platform"
+2d_physics/layer_4="Floor"
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
